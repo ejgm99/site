@@ -25,7 +25,7 @@ SECRET_KEY = '20e^$hia9t)u_g5qh#9$r__o85g4y5f5e@pcg0(7ufpjjej+!t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["ec2-18-222-152-62.us-east-2.compute.amazonaws.com"]
+ALLOWED_HOSTS = ["ec2-18-222-152-62.us-east-2.compute.amazonaws.com", '127.0.0.1']
 
 
 # Application definition
@@ -133,3 +133,15 @@ STATICFILES_DIRS = (
 )
 
 STATIC_URL = '/static/'
+
+print("BASE DIR: ")
+print(BASE_DIR)
+
+print("Static files dirs: ")
+print(STATICFILES_DIRS)
+
+print("Media root: ")
+print(MEDIA_ROOT)
+
+print("Media url: ")
+print(MEDIA_URL)

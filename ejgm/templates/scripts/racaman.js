@@ -1,4 +1,4 @@
-let len = 10;
+let len = 100;
 
 function setup() {
   // put setup code here

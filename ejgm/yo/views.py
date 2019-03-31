@@ -1,9 +1,6 @@
 from django.shortcuts import render
-
-# Create your views here.
-
 from django.http import HttpResponse
-
-
+from django.contrib.staticfiles.templatetags.staticfiles import static
+# Create your views here.
 def index(request):
-    return HttpResponse("Hi! I'm Erick Gomez. Welcome to my site!")
+    return render(request, 'intro.html')

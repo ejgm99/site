@@ -2,16 +2,18 @@ let len = 10;
 
 function setup() {
   // put setup code here
-  let canvas = createCanvas(1280,  622);
+  let canvas = createCanvas(1280,  622); //mac: 1280, 622
+  canvas.parent('sketch');
   stroke(color(225,118,0));
   noFill();
   noLoop();
+  background(0);
   Racaman(len);
 }
 
-function draw() {
+// function draw() {
 
-}
+// }
 
 function Racaman(len){ //generates Racaman sequence along number line given a number of points
   var numberline = [];

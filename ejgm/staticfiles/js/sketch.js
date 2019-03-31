@@ -1,17 +1,25 @@
-let len = 100;
+
+let i =0;
 
 function setup() {
-  // put setup code here
-  let canvas = createCanvas(1280,  622);
-  stroke(color(225,118,0));
-  noFill();
-  noLoop();
-  Racaman(len);
+  var canvas = createCanvas(1280,  622);
+ 
+  // Move the canvas so it’s inside our <div id="sketch-holder">.
+  canvas.parent('sketch');
+
+  background(0, 0, 200);
 }
 
-function draw() {
-
+function draw(){
+	background(color(i++,0,200));
+	if(i>200){
+		i = 0;
+	}
+	noFill();
+	noLoop();
+	Racaman(100);
 }
+
 
 function Racaman(len){ //generates Racaman sequence along number line given a number of points
   var numberline = [];

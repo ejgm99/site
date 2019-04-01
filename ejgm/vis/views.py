@@ -3,4 +3,4 @@ from django.http import HttpResponse
 from django.contrib.staticfiles.templatetags.staticfiles import static
 # Create your views here.
 def index(request):
-    return render(request, 'racaman.html')
+    return render(request, 'vis/racaman.html')

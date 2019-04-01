@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% include 'preload.html' %}
+
+{% load static %}
+ <style>
+ img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+a { text-align: center }
+ </style>
+
+<div class = "container">
+  <img src="{% static 'images/bh/logo.png' %}" class="img-fluid" alt="Responsive image">
+
+        <div class = "row">
+
+            <div class = "col-sm-6 text-right">
+            <a href = "http://127.0.0.1:8000/tasks"> Projects
+            </a>
+            </div>
+
+            <div class = "col-sm-6 text-left">
+             <a href = "http://127.0.0.1:8000/inventory">  Inventory </a>  
+            <p> {{task.description}}</p>
+            </div>
+
+       </div>
+</div>
